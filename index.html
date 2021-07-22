@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Project 78</title>
+</head>
+<body>
+    <h1>Family Book</h1>
+<br>
+<br>
+    <img src="Family-Silhouette-3.jpg" style="width: 30%" id="family-member-image">
+<br>
+<br>
+
+<h4 id="family-member-id"></h4>
+
+
+
+<button onclick="update();">Next</button>
+<script>
+    var images = ["https://www.google.com/url?sa=i&url=https%3A%2F%2Ftimesofindia.indiatimes.com%2Flife-st
+    yle%2Fparenting%2Fmoments%2Ffrom-being-a-mom-to-becoming-a-friend-how-the-relationship-between-mothers-and-children-has-changed-over-the-years%2Farticleshow%2F75654370.cms&psig=AOvVaw2ux1_sUHT
+    pcgYPBvQLQ6rH&ust=1627053590382000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG0Iv99vECFQAAAAAdAAAAABAD", "https://www.google.com/url?sa=i&url=https%3A%2F
+    %2Fpixels.com%2Ffeatured%2Flove-you-dad-surbhi-grover.html&psig=AOvVaw1j4xPnM861L1B9FgVb5nU3&ust=1627053617529000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjA7pj99vECFQAAAAAdAAAAABAD", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutt
+    erstock.com%2Fsearch%2Fmother%2Bdaughter%2Bshadow&psig=AOvVaw0VtpBYcEI5KD73vGgT6Nqc&ust=1627053664837000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCODFqq_99vECFQAAAAAdAAAAABAD", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnn.com%2F2015%2F01%2F20%2Fliving%2Fgaller
+    y%2Fcnnphotos-dog-shadows%2Findex.html&psig=AOvVaw29wssyqT5hKZvTJ6Ai8C49&ust=1627053685637000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDNrrn99vECFQAAAAAdAAAAABAD"];
+    var names = ["Mom", "Dad", "Me", "Puppies"];
+
+    var i = 0;
+    function update() {
+        i++;
+        var number_of_family_members_in_array = 4;
+        if( i > number_of_family_members_in_array) {
+            i = 0;
+        }
+        var updatedImages = images[i];
+        var updatedNames = names[i];
+        document.getElementById("family_member_image").src = updatedImages;
+        document.getElementById("family_member_name").src = updatedNames;
+    }
+
+    <script>
+</body>
+</html>
